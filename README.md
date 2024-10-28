@@ -25,14 +25,20 @@ The `input` in `eventbridge.tf` extracts specific fields from the event's `detai
 
 ```json
 {
-  "bucket_name": "bucket-upload-events-test",
-  "object_key": "image.jpeg",
-  "object_size": 296423,
-  "etag": "4c74cd286b6c46",
-  "request_id": "5C5ZUYTZ5THXE55",
-  "requester": "44444444444",
-  "source_ip": "1.1.1.1",
-  "reason": "PutObject"
+   "version": "0",
+   "bucket": {
+      "name": "bucket-upload-events-test"
+   },
+   "object": {
+      "key": "image.jpeg",
+      "size": 89443,
+      "etag": "4c6666286b6c46",
+      "sequencer": "000000000000000000"
+   },
+   "request-id": "8ZJZZZZZZZZZZZZZ",
+   "requester": "44444444444",
+   "source-ip-address": "1.1.1.1",
+   "reason": "PutObject"
 }
 ```
 
